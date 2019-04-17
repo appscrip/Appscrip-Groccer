@@ -2,23 +2,6 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
-        <name>CustomObject</name>
-    </types>
-     <types>
-        <members>*</members>
-        <name>CustomField</name>
-    </types>
-     <types>
-        <members>Account.Franchises</members>
-        <members>Account.Store</members>
-        <name>RecordType</name>   
-    </types>
-    <types>
-        <members>*</members>
-        <name>RecordType</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -27,6 +10,47 @@
         <members>OrdersList</members>
         <name>ApexPage</name>
     </types>
-    
+    <types>
+        <members>*</members>
+        <members>Case.Case_Mongo_Id__c</members>
+        <members>Contact.Last_Login__c</members>
+        <members>Contact.Mongo_Reference_Id__c</members>
+        <members>Order.Order_Id__c</members>
+        <members>Product2.Mongo_Id__c</members>
+        <members>Product2.Product_Image__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-Franchises Layout</members>
+        <members>Account-Store Layout</members>
+        <members>AddOns__c-AddOns Layout</members>
+        <members>Addresses__c-Customer&apos;s Addresses Layout</members>
+        <members>Case-Case Layout</members>
+        <members>Central_Product__c-Central Product Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Order-Order Layout</members>
+        <members>Ordered_Item_AddOn__c-Ordered Itemn AddOn Layout</members>
+        <members>Ordered_Items__c-Ordered Items Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>Product_AddOns__c-Product AddOn Layout</members>
+        <members>Product_Unit__c-Product Unit Layout</members>
+        <members>Wallet_Transactions__c-Wallet Transactions Layout</members>
+        <members>Wallet_transaction_for_Store__c-Wallet transaction for Store Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account.Franchises</members>
+        <members>Account.Store</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
     <version>45.0</version>
 </Package>
