@@ -5,6 +5,12 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>CustomersList</members>
+        <members>OrderItemsList</members>
+        <members>OrdersList</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
         <members>*</members>
         <name>ApexTrigger</name>
     </types>

@@ -1,0 +1,24 @@
+<apex:page StandardController="Order" extensions="OrderItemsListController" sidebar="false" showHeader="false" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Ordered Items List" columns="1">
+                <apex:pageblockTable value="{!orderedItemList}" var="ordItem" >
+                    <apex:column value="{!ordItem.Name}"/>
+                    <apex:column value="{!ordItem.Unit_Name__c}"/>
+                    <apex:column value="{!ordItem.Orders__c}"/>
+                    <apex:column value="{!ordItem.Offer_Id__c}"/> 
+                    <apex:column value="{!ordItem.Offered_Price__c}"/>
+                    <apex:column value="{!ordItem.Item_Discount__c}"/>
+                    <apex:column value="{!ordItem.AddOn_Price__c}"/>
+                    <apex:column value="{!ordItem.Actual_Price__c}"/>
+                </apex:pageblockTable> 
+            </apex:pageBlockSection> 
+            <apex:pageBlockSection title="AddOns Items List" columns="1">
+                <apex:pageblockTable value="{!addOnList}" var="addOnItem">
+                    <apex:column value="{!addOnItem.Name}"/>
+                    <apex:column value="{!addOnItem.Price__c}"/> 
+                </apex:pageblockTable> 
+            </apex:pageBlockSection>        
+        </apex:pageBlock>       
+    </apex:form> 
+</apex:page>
