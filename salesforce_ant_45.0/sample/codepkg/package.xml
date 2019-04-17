@@ -2,6 +2,23 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
+        <name>CustomObject</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
+     <types>
+        <members>Account.Franchises</members>
+        <members>Account.Store</members>
+        <name>RecordType</name>   
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -10,26 +27,6 @@
         <members>OrdersList</members>
         <name>ApexPage</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Account.Franchises</members>
-        <members>Account.Store</members>
-        <name>RecordType</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>RecordType</name>
-    </types>
+    
     <version>45.0</version>
 </Package>
