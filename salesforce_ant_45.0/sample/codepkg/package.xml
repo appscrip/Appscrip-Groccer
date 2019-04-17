@@ -9,12 +9,21 @@
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>Account.Activity_Score__c</members>
+        <members>*</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Contact.Activity_Score__c</members>
-        <name>CustomField</name>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account.Franchises</members>
+        <members>Account.Store</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
     </types>
     <version>45.0</version>
 </Package>
