@@ -53,41 +53,32 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>AddOn_Id__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>false</externalId>
-        <label>AddOn Id</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
-        <fullName>Ordered_Items__c</fullName>
+        <fullName>Assign_Salesman__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Ordered Items</label>
-        <referenceTo>Ordered_Items__c</referenceTo>
-        <relationshipLabel>AddOns</relationshipLabel>
-        <relationshipName>AddOns</relationshipName>
+        <label>Assign Salesman</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Area_Mappings</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Price__c</fullName>
+        <fullName>Pincode__c</fullName>
         <externalId>false</externalId>
-        <label>Price</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
+        <label>Pincode</label>
+        <length>255</length>
+        <required>true</required>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
-    <label>AddOns</label>
+    <label>Area Mapping</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Pincode__c</columns>
+        <columns>Assign_Salesman__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -95,8 +86,9 @@
         <label>Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>AddOns</pluralLabel>
+    <pluralLabel>Area Mappings</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>

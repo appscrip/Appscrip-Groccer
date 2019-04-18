@@ -26,20 +26,20 @@
     </types>
     <types>
         <members>Account-Account Layout</members>
-        <members>Account-Franchises Layout</members>
-        <members>Account-Store Layout</members>
-        <members>AddOns__c-AddOns Layout</members>
-        <members>Addresses__c-Customer&apos;s Addresses Layout</members>
+        <members>Account-Franchises</members>
+        <members>Account-Store</members>
+        <members>AddOn__c-AddOns Layout</members>
+        <members>Addresses__c-Addresses Layout</members>
         <members>Case-Case Layout</members>
         <members>Central_Product__c-Central Product Layout</members>
         <members>Contact-Contact Layout</members>
         <members>Order-Order Layout</members>
-        <members>Ordered_Item_AddOn__c-Ordered Itemn AddOn Layout</members>
         <members>Ordered_Items__c-Ordered Items Layout</members>
         <members>Product2-Product Layout</members>
-        <members>Product_AddOns__c-Product AddOn Layout</members>
+        <members>Product_AddOns__c-AddOns For Product Layout</members>
         <members>Product_Unit__c-Product Unit Layout</members>
-        <members>Wallet_Transactions__c-Wallet Transactions Layout</members>
+        <members>Wallet_Transactions__c-Page Layout For Customer</members>
+        <members>Wallet_Transactions__c-Page Layout For Store</members>
         <members>Wallet_transaction_for_Store__c-Wallet transaction for Store Layout</members>
         <name>Layout</name>
     </types>

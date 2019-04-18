@@ -53,50 +53,55 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>AddOn_Id__c</fullName>
-        <caseSensitive>false</caseSensitive>
+        <fullName>Amount__c</fullName>
         <externalId>false</externalId>
-        <label>AddOn Id</label>
-        <length>255</length>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client__c</fullName>
+        <externalId>false</externalId>
+        <label>Client</label>
+        <length>50</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
-        <unique>true</unique>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Ordered_Items__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <fullName>Date__c</fullName>
         <externalId>false</externalId>
-        <label>Ordered Items</label>
-        <referenceTo>Ordered_Items__c</referenceTo>
-        <relationshipLabel>AddOns</relationshipLabel>
-        <relationshipName>AddOns</relationshipName>
+        <label>Date</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>Date</type>
     </fields>
     <fields>
-        <fullName>Price__c</fullName>
+        <fullName>Reimbursed__c</fullName>
+        <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Price</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
+        <label>Reimbursed</label>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Checkbox</type>
     </fields>
-    <label>AddOns</label>
+    <label>Expense</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Name</label>
+        <label>Expense Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>AddOns</pluralLabel>
+    <pluralLabel>Expenses</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>
