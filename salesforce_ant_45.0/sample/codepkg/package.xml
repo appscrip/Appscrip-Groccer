@@ -5,17 +5,49 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
+        <members>CustomersList</members>
+        <members>OrderItemsList</members>
+        <members>OrdersList</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>*</members>
+        <members>Case.Case_Mongo_Id__c</members>
+        <members>Contact.Last_Login__c</members>
+        <members>Contact.Mongo_Reference_Id__c</members>
+        <members>Order.Order_Id__c</members>
+        <members>Product2.Mongo_Id__c</members>
+        <members>Product2.Product_Image__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>*</members>
         <name>CustomObject</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-Franchises</members>
+        <members>Account-Store</members>
+        <members>AddOn__c-AddOns Layout</members>
+        <members>Addresses__c-Addresses Layout</members>
+        <members>Case-Case Layout</members>
+        <members>Central_Product__c-Central Product Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Order-Order Layout</members>
+        <members>Ordered_Items__c-Ordered Items Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>Product_AddOns__c-AddOns For Product Layout</members>
+        <members>Product_Unit__c-Product Unit Layout</members>
+        <members>Wallet_Transactions__c-Page Layout For Customer</members>
+        <members>Wallet_Transactions__c-Page Layout For Store</members>
+        <members>Wallet_transaction_for_Store__c-Wallet transaction for Store Layout</members>
+        <name>Layout</name>
+    </types>
+       
     <types>
         <members>Account.Franchises</members>
         <members>Account.Store</members>

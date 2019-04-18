@@ -1,0 +1,24 @@
+<apex:page standardController="Account" extensions="CustomerAuthorizedByOrder" sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Customer's Details" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!conList}" var="con" >
+                   <!-- <apex:column value="{!con.firstName}"/>-->
+                   <!-- <apex:column value="{!con.lastName}"/> -->
+                    <apex:column headerValue="Name">
+                        <apex:outputLink value="https://manishappscrip-dev-ed.my.salesforce.com/{!con.Id}" target="_blank">   
+                            {!con.LastName}
+                        </apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!con.Email}"/>
+                    <apex:column value="{!con.Phone}"/>
+                    <apex:column value="{!con.Device_Name__c}"/>
+                <!--    <apex:column value="{!con.Device_Id__c}"/> -->
+                    <apex:column value="{!con.User_Type__c}"/>
+                    <apex:column value="{!con.Currently_Active__c}"/>
+                    <apex:column value="{!con.Customer_Status__c}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>  
+</apex:page>

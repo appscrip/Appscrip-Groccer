@@ -1,0 +1,27 @@
+<apex:page StandardController="Contact" extensions="OrderListController" showHeader="false" sidebar="false" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Orders" columns="1" collapsible="false">
+                <apex:pageBlockTable value="{!orderList}" var="ord">
+               <!--  <apex:column value="{!ord.Name}"/>  -->
+               <!--  <apex:column value="{!ord.OrderNumber}"/> -->
+                    <apex:column headerValue="Order Number">      
+                    <apex:outputLink value="https://manishappscrip-dev-ed.my.salesforce.com/{!ord.Id}" target="_blank">
+                    {!ord.OrderNumber}
+                    </apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!ord.EffectiveDate}"/>
+                    <!-- <apex:column headerValue="Account Name">  
+                    <apex:outputLink value="https://manishappscrip-dev-ed.my.salesforce.com/{!ord.AccountID}">
+                    {!ord.account.name}
+                    </apex:outputLink>
+                    </apex:column> -->                                         
+                    <apex:column value="{!ord.AccountID}"/>    
+                    <apex:column value="{!ord.CustomerAuthorizedByID}"/>
+                    <apex:column value="{!ord.Total_Amount__c}"/>
+              <!-- <apex:column value="{!ord.Pickup_Area__c}"/>  -->
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
