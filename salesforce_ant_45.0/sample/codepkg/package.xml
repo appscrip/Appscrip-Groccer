@@ -25,6 +25,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Account-Account Layout</members>
         <members>Account-Franchises</members>
         <members>Account-Store</members>
@@ -43,6 +47,7 @@
         <members>Wallet_transaction_for_Store__c-Wallet transaction for Store Layout</members>
         <name>Layout</name>
     </types>
+       
     <types>
         <members>Account.Franchises</members>
         <members>Account.Store</members>
